@@ -7,6 +7,6 @@
 %%
 [a-z] { return L; }
 [0-9] { return D; }
-[ \t\n]+ { ; }
+\n { return 0; }
 . { return yytext[0]; }
 %%
